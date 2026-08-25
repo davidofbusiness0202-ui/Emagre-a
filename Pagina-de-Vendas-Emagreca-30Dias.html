@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emagreça em 30 Dias — Guia Completo para Mulheres</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,700;1,900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --plum-dark:#4A2B35;
+    --plum:#6B3F4D;
+    --coral:#E85D6B;
+    --coral-dark:#D94C5A;
+    --gold:#D9A441;
+    --cream:#FBF3EC;
+    --sand:#F3E9D8;
+    --softpink:#F7E4E6;
+    --dark:#2E2A26;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:'Poppins',sans-serif;
+    color:var(--dark);
+    background:var(--cream);
+    line-height:1.5;
+  }
+  img,svg{display:block;max-width:100%;}
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px;}
+  h1,h2,h3{font-family:'Lora',serif;}
+
+  /* ===== HERO ===== */
+  .hero{
+    background:linear-gradient(160deg,var(--plum-dark) 0%,var(--plum) 46%,#7A4A57 60%,var(--coral) 130%);
+    color:#fff;
+    padding:64px 0 70px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";position:absolute;top:-160px;right:-140px;width:480px;height:480px;border-radius:50%;
+    background:radial-gradient(circle at 35% 35%,rgba(232,137,146,.2),transparent 70%);
+  }
+  .hero-inner{position:relative;z-index:2;text-align:center;}
+  .stars{color:var(--gold);letter-spacing:10px;font-size:18px;margin-bottom:18px;}
+  .eyebrow{
+    font-weight:600;font-size:14px;letter-spacing:4px;text-transform:uppercase;
+    color:#F6D9A8;margin-bottom:22px;
+  }
+  .hero h1{
+    font-weight:900;font-style:italic;font-size:56px;line-height:1.02;margin-bottom:8px;
+  }
+  .hero h1 .accent{
+    display:block;
+    background:linear-gradient(90deg,#FFE9BF,#F6D9A8);
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    font-size:60px;margin-top:2px;
+  }
+  .hero p.sub{
+    max-width:560px;margin:22px auto 0;font-size:18px;color:#FBEFE9;font-weight:400;
+  }
+  .hero p.sub b{color:#fff;font-weight:600;}
+  .chips{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:34px;}
+  .chip{
+    background:rgba(255,255,255,.13);border:1.5px solid rgba(255,255,255,.35);
+    border-radius:999px;padding:10px 20px;font-size:14px;font-weight:600;color:#fff;
+    display:flex;align-items:center;gap:8px;
+  }
+  .cta-btn{
+    display:inline-block;margin-top:38px;background:linear-gradient(90deg,var(--coral),var(--coral-dark));
+    color:#fff;font-weight:700;font-size:18px;padding:18px 42px;border-radius:999px;
+    text-decoration:none;box-shadow:0 12px 28px rgba(232,93,107,.4);
+    transition:transform .15s ease;
+  }
+  .cta-btn:hover{transform:translateY(-2px);}
+  .microcopy{margin-top:14px;font-size:13px;color:#F6D9A8;letter-spacing:1px;text-transform:uppercase;font-weight:600;}
+
+  /* ===== SECTION GENERIC ===== */
+  section{padding:64px 0;}
+  .section-title{
+    text-align:center;font-size:34px;font-weight:700;color:var(--plum);margin-bottom:10px;
+  }
+  .section-sub{
+    text-align:center;color:#8a6a70;font-size:16px;max-width:560px;margin:0 auto 42px;
+  }
+
+  /* ===== PROBLEM/EMPATHY ===== */
+  .empathy{background:#fff;}
+  .empathy-grid{display:flex;flex-wrap:wrap;gap:20px;}
+  .empathy-card{
+    flex:1 1 calc(50% - 10px); min-width:240px;
+    background:var(--softpink);border-radius:18px;padding:26px 24px;
+  }
+  .empathy-card .ic{font-size:26px;margin-bottom:10px;}
+  .empathy-card p{font-size:15px;color:var(--dark);}
+
+  /* ===== O QUE VOCÊ RECEBE ===== */
+  .includes{background:var(--sand);}
+  .includes-grid{display:flex;flex-wrap:wrap;gap:18px;}
+  .inc-card{
+    flex:1 1 calc(50% - 9px); min-width:250px;
+    background:#fff;border-radius:18px;padding:28px 24px;box-shadow:0 8px 20px rgba(74,43,53,.06);
+  }
+  .inc-card .ic{
+    width:48px;height:48px;border-radius:14px;background:var(--softpink);
+    display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px;
+  }
+  .inc-card h3{font-size:19px;color:var(--plum);margin-bottom:8px;}
+  .inc-card p{font-size:14px;color:#6b5a5d;}
+
+  /* ===== SUMÁRIO / CAPÍTULOS ===== */
+  .chapters{background:#fff;}
+  .chapter-row{
+    display:flex;align-items:center;gap:20px;padding:16px 20px;border-radius:14px;
+  }
+  .chapter-row:nth-child(odd){background:var(--cream);}
+  .chapter-num{
+    flex:0 0 auto;width:44px;height:44px;border-radius:50%;background:var(--plum);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:700;font-family:'Lora',serif;
+  }
+  .chapter-row span.t{font-weight:600;color:var(--dark);font-size:15px;}
+
+  /* ===== QUOTE BAND ===== */
+  .quoteband{
+    background:linear-gradient(120deg,var(--plum-dark),var(--plum));
+    color:#fff;text-align:center;padding:56px 24px;
+  }
+  .quoteband .qmark{color:var(--gold);font-size:44px;font-family:'Lora',serif;}
+  .quoteband p{
+    font-family:'Lora',serif;font-style:italic;font-size:24px;max-width:640px;margin:0 auto;line-height:1.5;
+  }
+
+  /* ===== FAQ ===== */
+  .faq{background:var(--cream);}
+  .faq-item{
+    background:#fff;border-left:4px solid var(--gold);border-radius:10px;
+    padding:20px 24px;margin-bottom:14px;
+  }
+  .faq-item .q{font-weight:700;color:var(--plum);margin-bottom:6px;font-size:15px;}
+  .faq-item .a{font-size:14px;color:#5a4a4d;}
+
+  /* ===== FINAL CTA ===== */
+  .final{
+    background:linear-gradient(160deg,var(--plum-dark),var(--coral) 140%);
+    color:#fff;text-align:center;padding:70px 24px;
+  }
+  .final h2{font-size:34px;margin-bottom:14px;}
+  .final p{font-size:16px;color:#FBEFE9;max-width:520px;margin:0 auto 30px;}
+  .final .card{
+    background:#fff;border-radius:22px;padding:30px;max-width:460px;margin:0 auto;
+    box-shadow:0 20px 50px rgba(0,0,0,.3);
+  }
+  .final .card .price-label{font-size:13px;color:#8a6a70;text-transform:uppercase;letter-spacing:2px;font-weight:600;}
+  .final .card .l1{font-family:'Lora',serif;font-weight:700;font-size:22px;color:var(--plum);margin:6px 0 18px;}
+
+  /* ===== DISCLAIMER ===== */
+  .disclaimer{background:var(--dark);color:#cbb9bb;font-size:12px;text-align:center;padding:26px 24px;line-height:1.6;}
+  .disclaimer b{color:#fff;}
+
+  @media (max-width:640px){
+    .hero h1{font-size:40px;} .hero h1 .accent{font-size:44px;}
+    .empathy-card,.inc-card{flex:1 1 100%;}
+    .quoteband p{font-size:19px;}
+    .final h2{font-size:26px;}
+  }
+</style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap hero-inner">
+      <div class="stars">✦ ✦ ✦</div>
+      <div class="eyebrow">Guia completo para mulheres</div>
+      <h1>EMAGREÇA<span class="accent">EM 30 DIAS</span></h1>
+      <p class="sub">O passo a passo <b>completo</b> para criar hábitos que funcionam de verdade — <b>alimentação, treino, sono e mentalidade</b> em um só lugar.</p>
+      <div class="chips">
+        <div class="chip">🥗 Plano alimentar</div>
+        <div class="chip">💪 Treino em casa</div>
+        <div class="chip">📓 Diário de hábitos</div>
+        <div class="chip">🍽️ Receitas inclusas</div>
+      </div>
+      <a href="#comprar" class="cta-btn">QUERO COMEÇAR →</a>
+      <div class="microcopy">Guia digital em PDF · Acesso imediato</div>
+    </div>
+  </div>
+
+  <!-- EMPATIA -->
+  <section class="empathy">
+    <div class="wrap">
+      <h2 class="section-title">Você já tentou de tudo?</h2>
+      <p class="section-sub">Dieta restritiva, corte radical, treino puxado demais — e depois de um tempo, tudo volta. O problema nunca foi força de vontade.</p>
+      <div class="empathy-grid">
+        <div class="empathy-card"><div class="ic">🔁</div><p><b>Efeito sanfona</b> — perde, recupera, perde de novo, e a motivação cai a cada ciclo.</p></div>
+        <div class="empathy-card"><div class="ic">⏳</div><p><b>Falta de tempo</b> — rotina cheia deixa pouco espaço pra planejar refeição e treino.</p></div>
+        <div class="empathy-card"><div class="ic">😵‍💫</div><p><b>Informação demais</b> — cada rede social ensina uma dieta diferente, e no fim ninguém sabe por onde começar.</p></div>
+        <div class="empathy-card"><div class="ic">💔</div><p><b>Desistência no meio do caminho</b> — sem plano estruturado, é fácil perder o fio depois da primeira semana.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE VOCÊ RECEBE -->
+  <section class="includes">
+    <div class="wrap">
+      <h2 class="section-title">O que vem no guia</h2>
+      <p class="section-sub">Tudo o que você precisa pra começar hoje, sem enrolação — em um único PDF, organizado por semana.</p>
+      <div class="includes-grid">
+        <div class="inc-card"><div class="ic">🥗</div><h3>Cardápio de exemplo</h3><p>Estrutura de refeições por período do dia, mais uma tabela de trocas inteligentes pro dia a dia.</p></div>
+        <div class="inc-card"><div class="ic">💪</div><h3>Treino em casa</h3><p>6 exercícios com séries e repetições, sem precisar de equipamento ou academia.</p></div>
+        <div class="inc-card"><div class="ic">🗓️</div><h3>Plano de 4 semanas</h3><p>Um guia semana a semana, do primeiro passo até a consolidação dos hábitos.</p></div>
+        <div class="inc-card"><div class="ic">📓</div><h3>Diário de hábitos</h3><p>Tabela pra imprimir e acompanhar sua consistência dia a dia.</p></div>
+        <div class="inc-card"><div class="ic">🍽️</div><h3>Receitas selecionadas</h3><p>Links para receitas saudáveis de fontes confiáveis, prontas pra variar o cardápio.</p></div>
+        <div class="inc-card"><div class="ic">💬</div><h3>Perguntas frequentes</h3><p>Respostas diretas pras dúvidas mais comuns de quem está começando.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUMÁRIO -->
+  <section class="chapters">
+    <div class="wrap">
+      <h2 class="section-title">Dentro do guia</h2>
+      <p class="section-sub">10 capítulos, do primeiro dia até depois dos 30.</p>
+      <div class="chapter-row"><div class="chapter-num">00</div><span class="t">Introdução — Antes de começar</span></div>
+      <div class="chapter-row"><div class="chapter-num">01</div><span class="t">Mentalidade: o recomeço que funciona</span></div>
+      <div class="chapter-row"><div class="chapter-num">02</div><span class="t">Alimentação: seu prato, sua aliada + cardápio</span></div>
+      <div class="chapter-row"><div class="chapter-num">03</div><span class="t">Movimento: treino simples para fazer em casa</span></div>
+      <div class="chapter-row"><div class="chapter-num">04</div><span class="t">Sono, estresse e hormônios</span></div>
+      <div class="chapter-row"><div class="chapter-num">05</div><span class="t">Seu plano de 4 semanas</span></div>
+      <div class="chapter-row"><div class="chapter-num">06</div><span class="t">Diário de hábitos para imprimir</span></div>
+      <div class="chapter-row"><div class="chapter-num">07</div><span class="t">Erros comuns que travam o resultado</span></div>
+      <div class="chapter-row"><div class="chapter-num">08</div><span class="t">Perguntas frequentes</span></div>
+      <div class="chapter-row"><div class="chapter-num">09</div><span class="t">Depois dos 30 dias + receitas bônus</span></div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <div class="quoteband">
+    <div class="qmark">❝</div>
+    <p>Sem dietas extremas. Só hábitos que cabem na sua rotina — e que continuam funcionando depois do dia 30.</p>
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="wrap">
+      <h2 class="section-title">Perguntas frequentes</h2>
+      <div style="max-width:680px;margin:0 auto;">
+        <div class="faq-item"><div class="q">Preciso contar calorias?</div><div class="a">Não. O guia trabalha com princípios de prato equilibrado e escolhas melhores, sem precisar contar nada.</div></div>
+        <div class="faq-item"><div class="q">Funciona se eu nunca treinei antes?</div><div class="a">Sim — o treino é pensado para iniciantes, sem equipamento, com progressão no seu ritmo.</div></div>
+        <div class="faq-item"><div class="q">Como recebo o material?</div><div class="a">O guia é 100% digital, em PDF. Você recebe o acesso por e-mail assim que a compra é aprovada.</div></div>
+        <div class="faq-item"><div class="q">Posso ler pelo celular?</div><div class="a">Sim, o PDF funciona em celular, tablet ou computador.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <div class="final" id="comprar">
+    <div class="wrap">
+      <h2>Comece hoje o seu recomeço</h2>
+      <p>Guia completo, em PDF, com plano de 30 dias, receitas, treino e diário de hábitos.</p>
+      <div class="card">
+        <div class="price-label">Guia digital · PDF</div>
+        <div class="l1">Emagreça em 30 Dias</div>
+        <a href="#" class="cta-btn" style="width:100%;">QUERO COMEÇAR →</a>
+        <div class="microcopy" style="color:#8a6a70;margin-top:14px;">Acesso imediato após a confirmação da compra</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div class="disclaimer">
+    <b>Aviso importante:</b> este material tem finalidade educativa e não substitui avaliação individual de nutricionista, médico(a) ou profissional de educação física. Pessoas com condições de saúde pré-existentes, gestantes, lactantes ou com histórico de transtornos alimentares devem procurar orientação profissional antes de iniciar qualquer mudança de alimentação ou exercício. Resultados variam de pessoa para pessoa.
+  </div>
+
+</body>
+</html>
